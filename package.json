@@ -1,0 +1,27 @@
+{
+  "name": "meucarro",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "Victor Mendes",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^10.1.0"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
+  "build": {
+    "appId": "mycar",
+    "category": "car.manager",
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    }
+  }
+}

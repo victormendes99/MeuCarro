@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Meu carro!</title>
+    <link rel="stylesheet" href="../photon/dist/css/photon.min.css">
+    <link rel="stylesheet" href="../main.css">
+    <script>window.$ = window.jQuery = require('jquery');</script>
+        
+    <script src="../src/popupActionDetail.js"></script>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  </head>
+  <body>
+    <div class="formBox">
+        <form>
+            <div class="form-group">
+            <label>Ação</label>
+            <input id="acao" class="form-control" placeholder="Ação">
+            </div>
+            <div class="form-group">
+            <label>Data</label>
+            <input id="data" class="form-control" placeholder="Data">
+            </div>
+            <div class="form-group">
+                <label>Kilometragem</label>
+                <input id="kilometragem" class="form-control" placeholder="Km">
+            </div>
+            <div class="form-group">
+                <label>Observação</label>
+                <input id="observacao" class="form-control" placeholder="Observação">
+            </div>
+            <div class="form-actions">
+            <button id="btnOk" type="submit" class="btn btn-form btn-primary">OK</button>
+            </div>
+        </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Gerenciar</title>
+    <link rel="stylesheet" href="../photon/dist/css/photon.min.css">
+    <link rel="stylesheet" href="../main.css">
+    <script>window.$ = window.jQuery = require('jquery');</script>
+        
+    <script src="../src/controllerCarDetail.js"></script>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  </head>
+  <body>
+    <div class="window">
+  
+        <div class="window-content">
+          <div class="pane-group">
+            <div class="pane container">
+              <table class="table-striped" style="width: 70%; padding: 5%;">
+                <thead>
+                  <tr>
+                    <th>Ação</th>
+                    <th>Data</th>
+                    <th>Kilometragem</th>
+                    <th>Observação</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="bodyTable">
+                </tbody>
+              </table>
+              <div>
+                <button id="btnAddAction" class="btn btn-large btn-positive" style="display: inline;">
+                    Adicionar Ação
+                  </button>
+                  <button id="btnBack" class="btn btn-large btn-negative" style="display: inline;">
+                    Voltar
+                  </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
